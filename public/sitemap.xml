@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://jadecontrol.example.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://jadecontrol.example.com/tramites</loc>
+  </url>
+
+  <url>
+    <loc>https://jadecontrol.example.com/contribuyentes</loc>
+  </url>
+
+  <url>
+    <loc>https://jadecontrol.example.com/declaraciones</loc>
+  </url>
+
+  <url>
+    <loc>https://jadecontrol.example.com/pagos</loc>
+  </url>
+
+  <url>
+    <loc>https://jadecontrol.example.com/contacto</loc>
+  </url>
+
+</urlset>

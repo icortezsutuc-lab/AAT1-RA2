@@ -1,0 +1,623 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar-container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  min-height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #14532d;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.nav-menu a:hover {
+  color: #14532d;
+}
+
+.btn-navbar,
+.btn-primary {
+  display: inline-block;
+
+  padding: 12px 20px;
+
+  border-radius: 8px;
+
+  background: #14532d;
+  color: white;
+
+  border: none;
+
+  font-weight: 700;
+}
+
+.btn-navbar:hover,
+.btn-primary:hover {
+  background: #166534;
+}
+
+.btn-secondary {
+  display: inline-block;
+
+  padding: 12px 20px;
+
+  border-radius: 8px;
+
+  border: 1px solid #14532d;
+
+  color: #14532d;
+
+  font-weight: 700;
+}
+
+.btn-secondary:hover {
+  background: #dcfce7;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #ecfdf5,
+    #ffffff
+  );
+}
+
+.hero-container {
+  min-height: 580px;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.hero-badge,
+.section-badge {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  padding: 7px 12px;
+
+  border-radius: 30px;
+
+  background: #dcfce7;
+  color: #166534;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.hero h1 {
+  margin-bottom: 20px;
+
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+
+  line-height: 1.05;
+}
+
+.hero h1 span {
+  color: #14532d;
+}
+
+.hero p {
+  max-width: 650px;
+
+  margin-bottom: 30px;
+
+  color: #4b5563;
+
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+
+/* =========================
+   ENCABEZADOS
+========================= */
+
+.section-header {
+  max-width: 700px;
+
+  margin: 0 auto 45px;
+
+  text-align: center;
+}
+
+.section-header h2,
+.tramites h2,
+.confianza h2,
+.cta-final h2 {
+  font-size: 2.3rem;
+
+  margin-bottom: 15px;
+}
+
+.section-header p,
+.tramites > .container > p,
+.confianza p,
+.cta-final p {
+  color: #6b7280;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   BENEFICIOS
+========================= */
+
+.beneficios {
+  background: #ffffff;
+}
+
+.beneficios-grid,
+.tramites-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+.beneficio-card,
+.tarjeta-tramite,
+.api-card {
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  padding: 28px;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.beneficio-icon,
+.tarjeta-icon {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 18px;
+
+  border-radius: 12px;
+
+  background: #dcfce7;
+  color: #166534;
+
+  font-weight: 800;
+}
+
+.beneficio-card p,
+.tarjeta-tramite p {
+  color: #6b7280;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   TRÁMITES
+========================= */
+
+.tramites {
+  background: #f5f7fb;
+}
+
+.tarjeta-tramite a {
+  color: #14532d;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   API
+========================= */
+
+.seccion-api {
+  background: #ffffff;
+}
+
+.api-card {
+  max-width: 800px;
+
+  min-height: 230px;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.api-exito {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 30px;
+}
+
+.api-icon {
+  width: 70px;
+  height: 70px;
+
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 18px;
+
+  background: #dcfce7;
+  color: #166534;
+
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.api-info {
+  flex: 1;
+}
+
+.api-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #166534;
+
+  font-size: 0.9rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.05em;
+}
+
+.api-info h3 {
+  margin-bottom: 10px;
+
+  color: #172033;
+
+  font-size: 2rem;
+}
+
+.api-info p {
+  margin-bottom: 8px;
+
+  color: #6b7280;
+}
+
+.api-info small {
+  color: #9ca3af;
+}
+
+
+/* =========================
+   ESTADOS API
+========================= */
+
+.estado-api {
+  width: 100%;
+
+  padding: 35px;
+
+  text-align: center;
+}
+
+.estado-api h3 {
+  margin-bottom: 8px;
+}
+
+.estado-api p {
+  color: #6b7280;
+
+  line-height: 1.6;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+
+  margin: 0 auto 20px;
+
+  border: 4px solid #dcfce7;
+
+  border-top-color: #14532d;
+
+  border-radius: 50%;
+
+  animation: girar 0.8s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.estado-icon {
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 15px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #f3f4f6;
+
+  font-size: 1.5rem;
+}
+
+.btn-reintentar {
+  margin-top: 15px;
+
+  padding: 11px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #14532d;
+
+  color: #ffffff;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.btn-reintentar:hover {
+  background: #166534;
+}
+
+.btn-reintentar:focus {
+  outline: 3px solid #86efac;
+
+  outline-offset: 2px;
+}
+
+
+/* =========================
+   CONFIANZA
+========================= */
+
+.confianza {
+  background: #ecfdf5;
+
+  text-align: center;
+}
+
+.confianza .container {
+  max-width: 750px;
+}
+
+
+/* =========================
+   CTA FINAL
+========================= */
+
+.cta-final {
+  background: #ffffff;
+}
+
+.cta-final .container {
+  max-width: 750px;
+
+  text-align: center;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.formulario {
+  max-width: 650px;
+
+  margin: 35px auto 0;
+
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #14532d;
+
+  box-shadow:
+    0 0 0 3px #dcfce7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background: #111827;
+
+  color: #ffffff;
+
+  padding-top: 55px;
+}
+
+.footer-grid {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr;
+
+  gap: 40px;
+}
+
+.footer p {
+  color: #d1d5db;
+
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  border-top: 1px solid #374151;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+  .nav-menu {
+    display: none;
+  }
+
+  .beneficios-grid,
+  .tramites-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================
+   MÓVILES
+========================= */
+
+@media (max-width: 600px) {
+
+  .api-exito {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .api-info h3 {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  section {
+    padding: 55px 0;
+  }
+
+  .navbar-container {
+    min-height: 64px;
+  }
+
+  .btn-navbar {
+    display: none;
+  }
+
+  .hero-container {
+    min-height: 500px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons a {
+    text-align: center;
+  }
+
+}
