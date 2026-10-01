@@ -1,27 +1,24 @@
+import { Link } from "react-router-dom";
+
 function TarjetaTramite({
+  icono,
   titulo,
   descripcion,
   enlace
 }) {
   return (
     <article className="tarjeta-tramite">
-
-      <div className="tarjeta-icon">
-        ✓
+      <div className="tarjeta-icono">
+        {icono}
       </div>
 
-      <h3>
-        {titulo}
-      </h3>
+      <h3>{titulo}</h3>
 
-      <p>
-        {descripcion}
-      </p>
+      <p>{descripcion}</p>
 
-      <a href={enlace}>
-        Ver trámite →
-      </a>
-
+      <Link to={enlace} className="tarjeta-enlace">
+        Ver {titulo.toLowerCase()} →
+      </Link>
     </article>
   );
 }
