@@ -3,7 +3,7 @@ name: Deploy JadeControl to GitHub Pages
 on:
   push:
     branches:
-      - principal
+      - main
 
   workflow_dispatch:
 
