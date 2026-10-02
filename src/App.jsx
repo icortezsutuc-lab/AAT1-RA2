@@ -15,26 +15,14 @@ import Contacto from "./pages/Contacto";
 
 function App() {
   return (
-    <BrowserRouter basename="/AAT1-RA2">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/tramites" element={<Tramites />} />
-        <Route
-          path="/contribuyentes"
-          element={<Contribuyentes />}
-        />
-        <Route
-          path="/declaraciones"
-          element={<Declaraciones />}
-        />
-        <Route
-          path="/pagos"
-          element={<Pagos />}
-        />
-        <Route
-          path="/contacto"
-          element={<Contacto />}
-        />
+        <Route path="/contribuyentes" element={<Contribuyentes />} />
+        <Route path="/declaraciones" element={<Declaraciones />} />
+        <Route path="/pagos" element={<Pagos />} />
+        <Route path="/contacto" element={<Contacto />} />
       </Routes>
     </BrowserRouter>
   );

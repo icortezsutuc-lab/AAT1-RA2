@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jadecontrol.example.com/sitemap.xml
+Sitemap: https://icortezsutuc-lab.github.io/AAT1-RA2/sitemap.xml
